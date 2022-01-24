@@ -1,0 +1,81 @@
+/*
+
+File Name: style.less
+Date: 02/12/2021
+Programmer: Ella Seaman
+
+*/
+
+// out: null
+
+.headingStyle(@paramColor: #E3D9CB; @paramSize: 1em) {
+    color: @paramColor;
+    font-size: @paramSize;
+    font-weight: bold;
+    line-height: @paramSize;
+    margin-top: @paramSize / 2;
+    margin-bottom: @paramSize / 2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.transition(@paramSeconds: 1s) {
+    -webkit-transition: all @paramSeconds ease-in-out;
+    -moz-transition: all @paramSeconds ease-in-out;
+    -o-transition: all @paramSeconds ease-in-out;
+    transition: all @paramSeconds ease-in-out;
+}
+
+.navBtn(@paramSeconds: 1s; @paramColor: #9A341D){
+  background-color: @paramColor;
+  border: none;
+  padding: 2em 3em;
+  text-align: center;
+  font-size: 1em;
+  transition: @paramSeconds;
+}
+
+.borderBackgroundAndRadius(@paramColor: @darkColor3; @paramRadius:4px) {
+    background-color: @paramColor;
+    border-radius: @paramRadius;
+}
+
+.gradient(@paramDirection: right; @paramColor1: #000; @paramColor2: #592E25; @paramColor3: #000) {
+    background: @paramColor1; 
+    background: -o-linear-gradient(@paramDirection, @paramColor1, @paramColor2, @paramColor3);
+    background: -moz-linear-gradient(@paramDirection, @paramColor1, @paramColor2, @paramColor3);
+    background: linear-gradient(to @paramDirection, @paramColor1, @paramColor2, @paramColor3);
+}
+
+.transparent() {
+  opacity: 0.5;
+}
+
+
+.border() {
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+.emphasize() {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.bold() {
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.flipH() {
+    transform: scale(-1);
+}
+
+.textSpace() {
+    letter-spacing: 0.1em;
+    
+}
+.space() {
+    padding: .5em;
+    margin: .5em;
+}
